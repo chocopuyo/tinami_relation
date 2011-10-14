@@ -1,6 +1,6 @@
 <h1>TINAMI auth認証</h1>
 <h2>auth認証しませんか</h2>
-<%= form_tag(:controller => "figure",:action=>"search", :method => "post") do %>
+<%= form_tag(:controller => "figure",:action=>"login", :method => "post") do %>
   <%= label_tag(:mail, "メールアドレス:") %><br />
   <%= text_field_tag(:mail) %><br />
   <%= label_tag(:pass, "パスワード:") %><br />

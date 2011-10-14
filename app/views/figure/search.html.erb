@@ -1,3 +1,7 @@
-<% @result.each do |res|%>
-  <%= res %>
+<h1>検索結果</h1>
+<h2>レベル1</h2>
+<%= image_tag(@tree.root.data['thumbnail']) %><br />
+<h2>レベル2</h2>
+<% @tree.root.tags.each do |node| %>
+  <%= image_tag(node.data['thumbnail']) %>
 <% end %>

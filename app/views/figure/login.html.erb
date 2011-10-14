@@ -1,9 +1,6 @@
-<h1>TINAMI auth認証</h1>
-<h2>auth認証しませんか</h2>
+<h1>TINAMI(認証済みです)</h1>
+<h2>タグ検索</h2>
 <%= form_tag(:controller => "figure",:action=>"search", :method => "post") do %>
-  <%= label_tag(:mail, "メールアドレス:") %><br />
-  <%= text_field_tag(:mail) %><br />
-  <%= label_tag(:pass, "パスワード:") %><br />
-  <%= password_field_tag(:pass) %><br />
-  <%= submit_tag("認証") %>
+  <%= submit_tag("中野梓で検索") %>
 <% end %>
+
